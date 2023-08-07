@@ -23,8 +23,8 @@ const App: Component = () => {
         <Route path="/about-us" component={About} />
         <Route path="/contact-us" component={Contact} />
         <Route path="/cart" component={Cart} />
-        <Route path="/items" component={Products} />
-        <Route path="/products/:id?" component={ProductDetail} />
+        <Route path="/products" component={Products} />
+        <Route path="/products/:id" component={ProductDetail} />
         <Route path="/news" component={News} />
         <Route path="/news/:id?" component={SinglePageNews} />
         <Route path="/favorite" component={Favorite} />
