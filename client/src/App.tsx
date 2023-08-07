@@ -8,7 +8,7 @@ import Footer from "./components/layouts/Footer";
 import Contact from "./pages/contact";
 import Cart from "./pages/cart";
 import ProductDetail from "./pages/products/details";
-import Products from "./pages/products";
+import Products from "./pages/products/index";
 import News from "./pages/news";
 import SinglePageNews from "./pages/news/singlePage";
 import Favorite from "./pages/favorite";
@@ -23,7 +23,7 @@ const App: Component = () => {
         <Route path="/about-us" component={About} />
         <Route path="/contact-us" component={Contact} />
         <Route path="/cart" component={Cart} />
-        <Route path="/products" component={Products} />
+        <Route path="/items" component={Products} />
         <Route path="/products/:id?" component={ProductDetail} />
         <Route path="/news" component={News} />
         <Route path="/news/:id?" component={SinglePageNews} />
