@@ -88,7 +88,7 @@ export const Missions: Component = () => {
                     <div class="w-full items-center md:flex">
                       <div class="relative mb-12 w-full max-w-[310px] md:mr-12 md:mb-0 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
                         <img
-                          src="../../public/images/mission-2.png"
+                          src="/images/mission-2.png"
                           alt="image"
                           class="w-full"
                         />
@@ -444,7 +444,7 @@ export const Missions: Component = () => {
                       </div>
                       <div class="relative mb-12 w-full max-w-[310px] md:ml-12 md:mb-0 md:max-w-[250px] lg:ml-24 lg:max-w-[280px] 2xl:ml-24">
                         <img
-                          src="../../public/images/vision.png"
+                          src="/images/vision.png"
                           alt="image"
                           class="w-full"
                         />
@@ -766,7 +766,7 @@ export const Missions: Component = () => {
                     <div class="w-full items-center md:flex">
                       <div class="relative mb-12 w-full max-w-[310px] md:mr-12 md:mb-0 md:max-w-[250px] lg:mr-14 lg:max-w-[280px] 2xl:mr-16">
                         <img
-                          src="../../public/images/policy.png"
+                          src="/images/policy.png"
                           alt="image"
                           class="w-full"
                         />

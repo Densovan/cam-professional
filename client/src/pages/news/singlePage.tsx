@@ -21,11 +21,7 @@ const SinglePageNews: Component = () => {
             <br />
 
             <figure>
-              <img
-                src="../../../public/images/royal-king.jpg"
-                alt=""
-                class="w-auto"
-              />
+              <img src="/images/royal-king.jpg" alt="" class="w-auto" />
               <figcaption>Digital art by Anonymous</figcaption>
             </figure>
             <h2>

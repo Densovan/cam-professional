@@ -100,31 +100,19 @@ export const Banner: Component = () => {
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img
-                  alt=""
-                  src="../../public/images/maybank.svg"
-                  class="w-48 "
-                />
+                <img alt="" src="/images/maybank.svg" class="w-48 " />
               </a>
               <a
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img
-                  alt=""
-                  src="../../public/images/prince-bank.png"
-                  class="w-48"
-                />
+                <img alt="" src="/images/prince-bank.png" class="w-48" />
               </a>
               <a
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img
-                  alt=""
-                  src="../../public/images/hgb-group.png"
-                  class="w-36"
-                />
+                <img alt="" src="/images/hgb-group.png" class="w-36" />
               </a>
             </div>
             <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
@@ -132,11 +120,7 @@ export const Banner: Component = () => {
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img
-                  alt=""
-                  src="../../public/images/ph_logo.png"
-                  class="w-20"
-                />
+                <img alt="" src="/images/ph_logo.png" class="w-20" />
               </a>
               <a
                 href="#"
@@ -144,7 +128,7 @@ export const Banner: Component = () => {
               >
                 <img
                   alt=""
-                  src="../../public/images/orkide_development_logo.jpg"
+                  src="/images/orkide_development_logo.jpg"
                   class="w-28"
                 />
               </a>
@@ -152,11 +136,7 @@ export const Banner: Component = () => {
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img
-                  alt=""
-                  src="../../public/images/CAMPU_BANK.jpg"
-                  class="w-72"
-                />
+                <img alt="" src="/images/CAMPU_BANK.jpg" class="w-72" />
               </a>
             </div>
           </div>

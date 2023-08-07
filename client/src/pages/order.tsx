@@ -3,7 +3,7 @@ const Order = () => {
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">
-          <img alt="comming soon" src="./images/soon.png" />
+          <img alt="comming soon" src="/images/soon.png" />
           <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
             Coming Soon
           </p>

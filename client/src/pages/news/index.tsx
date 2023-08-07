@@ -37,7 +37,7 @@ export const Banner: Component = () => {
                 <img
                   class="object-cover object-center rounded"
                   alt="hero"
-                  src="../../public/images/shopping.png"
+                  src="/images/shopping.png"
                 />
               </div>
             </div>
