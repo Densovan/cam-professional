@@ -8,10 +8,7 @@ const Footer: Component = () => {
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
-              <A
-                href="javascript:void(0)"
-                class="mb-6 inline-block max-w-[160px]"
-              >
+              <A href="#" class="mb-6 inline-block max-w-[160px]">
                 <img class="w-36" src="/images/footer-logo.png" />
               </A>
               <p class="text-body-color mb-7 text-base">
@@ -65,7 +62,7 @@ const Footer: Component = () => {
               <ul>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     SaaS Development
@@ -73,7 +70,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Our Products
@@ -81,7 +78,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     User Flow
@@ -89,7 +86,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     User Strategy
@@ -104,7 +101,7 @@ const Footer: Component = () => {
               <ul>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     About US
@@ -112,7 +109,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Contact & Support
@@ -120,7 +117,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Success History
@@ -128,7 +125,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Setting & Privacy
@@ -143,7 +140,7 @@ const Footer: Component = () => {
               <ul>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Premium Support
@@ -151,7 +148,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Our Services
@@ -159,7 +156,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Know Our Team
@@ -167,7 +164,7 @@ const Footer: Component = () => {
                 </li>
                 <li>
                   <A
-                    href="javascript:void(0)"
+                    href="#"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
                     Download App
@@ -181,7 +178,7 @@ const Footer: Component = () => {
               <h4 class="text-dark mb-9 text-lg font-semibold">Follow Us On</h4>
               <div class="mb-6 flex items-center">
                 <A
-                  href="javascript:void(0)"
+                  href="#"
                   class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
@@ -194,7 +191,7 @@ const Footer: Component = () => {
                   </svg>
                 </A>
                 <A
-                  href="javascript:void(0)"
+                  href="#"
                   class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
@@ -207,7 +204,7 @@ const Footer: Component = () => {
                   </svg>
                 </A>
                 <A
-                  href="javascript:void(0)"
+                  href="#"
                   class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
@@ -220,7 +217,7 @@ const Footer: Component = () => {
                   </svg>
                 </A>
                 <A
-                  href="javascript:void(0)"
+                  href="#"
                   class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg

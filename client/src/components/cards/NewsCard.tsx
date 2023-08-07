@@ -23,7 +23,7 @@ const NewsCard: Component<Props> = ({ props }) => {
           <div>
             <h3>
               <A
-                href="javascript:void(0)"
+                href="#"
                 class="text-dark hover:text-primary inline-block text-xl font-semibold sm:text-lg lg:text-lg xl:text-lg"
               >
                 {props.title}
