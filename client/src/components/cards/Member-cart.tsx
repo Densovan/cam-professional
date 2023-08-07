@@ -11,7 +11,10 @@ interface Props {
 }
 const MemberCard: Component<Props> = ({ props }) => {
   return (
-    <div class="text-center text-gray-500 dark:text-gray-400">
+    <div
+      class="text-center text-gray-500 dark:text-gray-400"
+      data-aos="zoom-out-down"
+    >
       <img
         class="mx-auto mb-4 w-52 h-52 rounded-full"
         src={props.image}

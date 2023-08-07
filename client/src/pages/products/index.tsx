@@ -1,7 +1,7 @@
 import { Component, For, Show, createResource } from "solid-js";
 import Cards from "../../components/cards/Cards";
 const fetchData = async () => {
-  const res = await fetch("http://localhost:60011/CoreProducts");
+  const res = await fetch("https://cptdb.koompi.com/CoreProducts");
   return res.json();
 };
 
