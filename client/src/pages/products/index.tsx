@@ -2,7 +2,7 @@ import { Component, For } from "solid-js";
 // import Cards from "../../components/cards/Cards";
 // import CoreProducts from "../../data/Core-Product";
 
-const Products = () => {
+export default function Products() {
   return (
     // <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
     //   <div>
@@ -692,11 +692,11 @@ const Products = () => {
     //     </section>
     //   </main>
     // </div>
-    <h1 class="text-center text-4xl">Fuck you!</h1>
+    <div>
+      <h1 class="text-center text-4xl">Fuck you!</h1>
+    </div>
   );
-};
-
-export default Products;
+}
 
 // export const Banner: Component = () => {
 //   return (
