@@ -1,15 +1,8 @@
-import { Component, For, Show, createResource } from "solid-js";
+import { Component, For } from "solid-js";
 import Cards from "../../components/cards/Cards";
 import CoreProducts from "../../data/Core-Product";
 
 const Products: Component<{}> = () => {
-  // const fetchData = async () => {
-  //   const res = await fetch("https://cptdb.koompi.com/CoreProducts");
-  //   return res.json();
-  // };
-
-  // const [allProducts] = createResource(fetchData);
-
   return (
     <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
       <div>
@@ -718,17 +711,13 @@ export const Banner: Component = () => {
             </p>
           </div>
           <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
-            <img
-              src="../../../public/products/product-2.png"
-              alt=""
-              class="w-1/2"
-            />
+            <img src="/products/product-2.png" alt="" class="w-1/2" />
           </div>
         </div>
         <div class="rounded-2xl md:w-4/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 bg-gray-50 dark:bg-gray-800 py-6 px-6 md:py-0 md:px-4 lg:px-6 flex flex-col justify-center relative">
           <div class="flex flex-col justify-center">
             <h1 class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">
-              Game Console
+              RIBBON
             </h1>
             <p class="text-base lg:text-xl text-gray-800 dark:text-white">
               Save Upto <span class="font-bold">30%</span>
@@ -736,9 +725,9 @@ export const Banner: Component = () => {
           </div>
           <div class="flex justify-end md:absolute md:bottom-4 md:right-4 lg:bottom-0 lg:right-0">
             <img
-              src="https://i.ibb.co/rGfP7mp/Rectangle-59-1.png"
+              src="/products/product-2.png"
               alt=""
-              class="md:w-20 md:h-20 lg:w-full lg:h-full"
+              class="md:w-12 md:h-12 lg:w-1/2 lg:h-1/2"
             />
           </div>
         </div>
