@@ -6,7 +6,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "db": "npx json-server ./data/db.json -p 60011"
   },
   "license": "MIT",
   "devDependencies": {
