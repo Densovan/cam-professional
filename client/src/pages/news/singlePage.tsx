@@ -1,6 +1,7 @@
 import { Component, For } from "solid-js";
 import RelatedCard from "../../components/cards/RelatedCard";
 import NewsData from "../../data/News";
+import { A } from "@solidjs/router";
 
 const SinglePageNews: Component = () => {
   return (
@@ -157,28 +158,28 @@ const SinglePageNews: Component = () => {
                       aria-labelledby="dropdownMenuIconHorizontalButton"
                     >
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Edit
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Remove
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Report
-                        </a>
+                        </A>
                       </li>
                     </ul>
                   </div>
@@ -256,28 +257,28 @@ const SinglePageNews: Component = () => {
                       aria-labelledby="dropdownMenuIconHorizontalButton"
                     >
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Edit
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Remove
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Report
-                        </a>
+                        </A>
                       </li>
                     </ul>
                   </div>
@@ -350,28 +351,28 @@ const SinglePageNews: Component = () => {
                       aria-labelledby="dropdownMenuIconHorizontalButton"
                     >
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Edit
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Remove
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Report
-                        </a>
+                        </A>
                       </li>
                     </ul>
                   </div>
@@ -447,28 +448,28 @@ const SinglePageNews: Component = () => {
                       aria-labelledby="dropdownMenuIconHorizontalButton"
                     >
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Edit
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Remove
-                        </a>
+                        </A>
                       </li>
                       <li>
-                        <a
+                        <A
                           href="#"
                           class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           Report
-                        </a>
+                        </A>
                       </li>
                     </ul>
                   </div>

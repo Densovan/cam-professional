@@ -1,6 +1,7 @@
 import { Component, For } from "solid-js";
 import Cards from "../../components/cards/Cards";
 import CoreProducts from "../../data/Core-Product";
+import { A } from "@solidjs/router";
 
 const Products: Component<{}> = () => {
   return (
@@ -42,29 +43,29 @@ const Products: Component<{}> = () => {
               <h3 class="sr-only">Categories</h3>
               <ul role="list" class="px-2 py-3 font-medium text-gray-900">
                 <li>
-                  <a href="#" class="block px-2 py-3">
+                  <A href="#" class="block px-2 py-3">
                     Totes
-                  </a>
+                  </A>
                 </li>
                 <li>
-                  <a href="#" class="block px-2 py-3">
+                  <A href="#" class="block px-2 py-3">
                     Backpacks
-                  </a>
+                  </A>
                 </li>
                 <li>
-                  <a href="#" class="block px-2 py-3">
+                  <A href="#" class="block px-2 py-3">
                     Travel Bags
-                  </a>
+                  </A>
                 </li>
                 <li>
-                  <a href="#" class="block px-2 py-3">
+                  <A href="#" class="block px-2 py-3">
                     Hip Bags
-                  </a>
+                  </A>
                 </li>
                 <li>
-                  <a href="#" class="block px-2 py-3">
+                  <A href="#" class="block px-2 py-3">
                     Laptop Sleeves
-                  </a>
+                  </A>
                 </li>
               </ul>
 
@@ -485,44 +486,44 @@ const Products: Component<{}> = () => {
                   aria-labelledby="dropdownDefaultButton"
                 >
                   <li>
-                    <a
+                    <A
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Most Popular
-                    </a>
+                    </A>
                   </li>
                   <li>
-                    <a
+                    <A
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Best Rating
-                    </a>
+                    </A>
                   </li>
                   <li>
-                    <a
+                    <A
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Newest
-                    </a>
+                    </A>
                   </li>
                   <li>
-                    <a
+                    <A
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Low to High
-                    </a>
+                    </A>
                   </li>
                   <li>
-                    <a
+                    <A
                       href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       High to Low
-                    </a>
+                    </A>
                   </li>
                 </ul>
               </div>
@@ -543,28 +544,28 @@ const Products: Component<{}> = () => {
                 class="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900"
               >
                 <li>
-                  <a href="#">Equipment</a>
+                  <A href="#">Equipment</A>
                 </li>
                 <li>
-                  <a href="#">Ink Cartridge</a>
+                  <A href="#">Ink Cartridge</A>
                 </li>
                 <li>
-                  <a href="#">CAM-TONER CARTRIDGE</a>
+                  <A href="#">CAM-TONER CARTRIDGE</A>
                 </li>
                 <li>
-                  <a href="#">Printer</a>
+                  <A href="#">Printer</A>
                 </li>
                 <li>
-                  <a href="#">Bill Counter</a>
+                  <A href="#">Bill Counter</A>
                 </li>
                 <li>
-                  <a href="#">IT Services</a>
+                  <A href="#">IT Services</A>
                 </li>
                 <li>
-                  <a href="#">Ribbon</a>
+                  <A href="#">Ribbon</A>
                 </li>
                 <li>
-                  <a href="#">Accessories</a>
+                  <A href="#">Accessories</A>
                 </li>
               </ul>
               <div class="border-b border-gray-200 py-6">

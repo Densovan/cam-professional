@@ -1,5 +1,5 @@
 import { Component, createEffect, createResource, For } from "solid-js";
-import { useParams } from "@solidjs/router";
+import { A, useParams } from "@solidjs/router";
 import { useCartContext } from "../../context/CartContext";
 import { useNavigate } from "@solidjs/router";
 import Image from "../../components/Image";
@@ -48,9 +48,9 @@ const ProductDetail: Component<{}> = (props) => {
             >
               <li>
                 <div class="flex items-center">
-                  <a href="#" class="mr-2 text-sm font-medium text-gray-900">
+                  <A href="#" class="mr-2 text-sm font-medium text-gray-900">
                     Accessories
-                  </a>
+                  </A>
                   <svg
                     width="16"
                     height="20"
@@ -65,9 +65,9 @@ const ProductDetail: Component<{}> = (props) => {
               </li>
               <li>
                 <div class="flex items-center">
-                  <a href="#" class="mr-2 text-sm font-medium text-gray-900">
+                  <A href="#" class="mr-2 text-sm font-medium text-gray-900">
                     Printer
-                  </a>
+                  </A>
                   <svg
                     width="16"
                     height="20"
@@ -82,13 +82,13 @@ const ProductDetail: Component<{}> = (props) => {
               </li>
 
               <li class="text-sm">
-                <a
+                <A
                   href="#"
                   aria-current="page"
                   class="font-medium text-gray-500 hover:text-gray-600"
                 >
                   Ribbon
-                </a>
+                </A>
               </li>
             </ol>
           </nav>
@@ -207,9 +207,9 @@ const ProductDetail: Component<{}> = (props) => {
                     </svg>
                   </div>
                   <p class="sr-only">4 out of 5 stars</p>
-                  <a href="#" class="ml-3 text-sm font-medium text-primary">
+                  <A href="#" class="ml-3 text-sm font-medium text-primary">
                     117 reviews
-                  </a>
+                  </A>
                 </div>
               </div>
 
@@ -277,12 +277,12 @@ const ProductDetail: Component<{}> = (props) => {
                 {/* <div class="mt-10">
                 <div class="flex items-center justify-between">
                   <h3 class="text-sm font-medium text-gray-900">Size</h3>
-                  <a
+                  <A
                     href="#"
                     class="text-sm font-medium text-indigo-600 hover:text-indigo-500"
                   >
                     Size guide
-                  </a>
+                  </A>
                 </div>
 
                 <fieldset class="mt-4">

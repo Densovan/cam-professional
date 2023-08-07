@@ -1,5 +1,6 @@
 import { Component, createEffect, createSignal, For, Show } from "solid-js";
 import { useCartContext } from "../context/CartContext";
+import { A } from "@solidjs/router";
 
 type FormData = {
   fullname: string;
@@ -37,7 +38,7 @@ const Cart = () => {
           <div>
             <div>
               {cartItems.length === 0 ? (
-                <a href="/products" class=" text-center font-bold text-red-500">
+                <A href="/products" class=" text-center font-bold text-red-500">
                   <div class="flex justify-center mt-16">
                     <img
                       class="w-64"
@@ -45,7 +46,7 @@ const Cart = () => {
                     />
                   </div>
                   <p class="pt-12">Your cart is Empty !</p>
-                </a>
+                </A>
               ) : (
                 <div>
                   <div class="grid md:grid-cols-5 md:gap-20 mt-12 ">
@@ -181,7 +182,7 @@ const Cart = () => {
                             );
                           }}
                         </For>
-                        <a href="/products">
+                        <A href="/products">
                           <button
                             type="button"
                             class="w-full rounded-full flex items-center text-center justify-center py-3 px-5 mt-9 text-sm font-medium text-gray-600 focus:outline-none bg-white border border-gray-200 hover:bg-gray-100 hover:text-primary focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
@@ -197,7 +198,7 @@ const Cart = () => {
                             </svg>
                             More Products
                           </button>
-                        </a>
+                        </A>
                       </div>
                     </div>
 

@@ -1,4 +1,5 @@
 import { Component } from "solid-js";
+import { A } from "@solidjs/router";
 
 export type Members = {
   id: string;
@@ -21,7 +22,7 @@ const MemberCard: Component<Props> = ({ props }) => {
         alt="Bonnie Avatar"
       />
       <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        <a href="#">{props.name}</a>
+        <A href="#">{props.name}</A>
       </h3>
 
       <p>{props.position}</p>

@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import { NavLink } from "@solidjs/router";
+import { A } from "@solidjs/router";
 import { useCartContext } from "../../context/CartContext";
 import NavActive from "./NavActive";
 
@@ -17,9 +17,9 @@ const Navbar: Component<{}> = () => {
     <div>
       <nav class=" bg-white-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="/" class="flex items-center">
+          <A href="/" class="flex items-center">
             <img class="md:w-24 w-24" src="/images/logo.png" alt="Solid logo" />
-          </a>
+          </A>
           <div class="flex items-center md:order-2">
             <NavActive
               title="Order"

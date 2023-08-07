@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import { NavLink } from "@solidjs/router";
+import { NavLink, A } from "@solidjs/router";
 
 export type NewsData = {
   id: string;
@@ -22,12 +22,12 @@ const NewsCard: Component<Props> = ({ props }) => {
           </div>
           <div>
             <h3>
-              <a
+              <A
                 href="javascript:void(0)"
                 class="text-dark hover:text-primary inline-block text-xl font-semibold sm:text-lg lg:text-lg xl:text-lg"
               >
                 {props.title}
-              </a>
+              </A>
             </h3>
             <p class="text-body-color text-base">{props.des}</p>
           </div>

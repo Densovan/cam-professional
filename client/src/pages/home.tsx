@@ -3,6 +3,7 @@ import latestProduct from "../../data/Lates-product";
 import Cards from "../components/cards/Cards";
 import NewsData from "../data/News";
 import NewsCard from "../components/cards/NewsCard";
+import { A } from "@solidjs/router";
 
 const Home: Component = () => {
   return (
@@ -36,7 +37,7 @@ export const Banner: Component = () => {
       <div class="background-img">
         <div class="py-12 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <div>
-            <a
+            <A
               href="#"
               class="inline-flex justify-between items-center py-1 px-4 mb-3 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
               role="alert"
@@ -56,7 +57,7 @@ export const Banner: Component = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </A>
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
               The Best Toner Cartridge Supplier In Cambodia
             </h1>
@@ -71,7 +72,7 @@ export const Banner: Component = () => {
           </div>
 
           <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a
+            <A
               href="/products"
               class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-2xl bg-primary hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
@@ -88,7 +89,7 @@ export const Banner: Component = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </A>
           </div>
 
           <div class="mt-24 px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
@@ -96,33 +97,33 @@ export const Banner: Component = () => {
               Our Clients Believe In Us
             </span>
             <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-              <a
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <img alt="" src="/images/maybank.svg" class="w-48 " />
-              </a>
-              <a
+              </A>
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <img alt="" src="/images/prince-bank.png" class="w-48" />
-              </a>
-              <a
+              </A>
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <img alt="" src="/images/hgb-group.png" class="w-36" />
-              </a>
+              </A>
             </div>
             <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-              <a
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <img alt="" src="/images/ph_logo.png" class="w-20" />
-              </a>
-              <a
+              </A>
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
@@ -131,13 +132,13 @@ export const Banner: Component = () => {
                   src="/images/orkide_development_logo.jpg"
                   class="w-28"
                 />
-              </a>
-              <a
+              </A>
+              <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
                 <img alt="" src="/images/CAMPU_BANK.jpg" class="w-72" />
-              </a>
+              </A>
             </div>
           </div>
         </div>
@@ -157,9 +158,9 @@ export const LatestProducts: Component<{}> = () => {
           Out new products
         </p>
         <div class="float-right py-3 flex space-x-1 items-center">
-          <a href="/products" class="text-gray-500 text-xs font-bold">
+          <A href="/products" class="text-gray-500 text-xs font-bold">
             Show More
-          </a>
+          </A>
           <img class="w-auto h-3.5" src="/images/right-arrow.png" />
         </div>
         <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mt-12">
@@ -194,12 +195,12 @@ export const MainProducts: Component<{}> = () => {
         <p class="text-center text-xl font-semibold uppercase">
           LOOKING FOR OUR CORE PRODUCT
         </p>
-        <a href="/products">
+        <A href="/products">
           <div class="float-right py-3 flex space-x-1 items-center">
             <h1 class="text-gray-500 text-xs font-bold">Show More</h1>
             <img class="w-auto h-3.5" src="/images/right-arrow.png" />
           </div>
-        </a>
+        </A>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
           <Show when={coreProducts()} fallback={<p>Loading...</p>}>
             <For each={coreProducts().slice(0, 8)}>
@@ -289,13 +290,13 @@ export const Features: Component = () => {
                 You can use payments systems, as well as bank payment, card
                 payment.
               </p>
-              <a
+              <A
                 href="/"
                 aria-label=""
                 class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </A>
             </div>
           </div>
           <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -321,13 +322,13 @@ export const Features: Component = () => {
               <p class="mb-3 text-sm text-gray-900">
                 We delivery for you at anytime and anywhere
               </p>
-              <a
+              <A
                 href="/"
                 aria-label=""
                 class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </A>
             </div>
           </div>
           <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -353,13 +354,13 @@ export const Features: Component = () => {
               <p class="mb-3 text-sm text-gray-900">
                 We will renew for the error product in warranty
               </p>
-              <a
+              <A
                 href="/"
                 aria-label=""
                 class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Learn more
-              </a>
+              </A>
             </div>
           </div>
         </div>
@@ -379,9 +380,9 @@ export const News: Component = () => {
           Stay connect with us
         </p>
         <div class="float-right py-3 flex space-x-1 items-center">
-          <a href="/news" class="text-gray-500 text-xs font-bold">
+          <A href="/news" class="text-gray-500 text-xs font-bold">
             Show More
-          </a>
+          </A>
           <img class="w-auto h-3.5" src="/images/right-arrow.png" />
         </div>
         <div class="grid md:grid-cols-4 gap-4 mt-12">
@@ -430,9 +431,9 @@ export const Contact: Component = () => {
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a class="text-indigo-500 leading-relaxed">
+              <A href="#" class="text-indigo-500 leading-relaxed">
                 info@camprotec.com.kh
-              </a>
+              </A>
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
