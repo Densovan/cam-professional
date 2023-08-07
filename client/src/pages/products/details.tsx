@@ -95,7 +95,7 @@ const ProductDetail: Component<{}> = (props) => {
 
           <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-4 lg:px-8">
             <Image
-              image="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
+              image="/products/product1.png"
               name="undefined"
               width="undefined"
               heigh="undefined"
@@ -103,14 +103,14 @@ const ProductDetail: Component<{}> = (props) => {
             />
             <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-4">
               <Image
-                image="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
+                image="/products/product1.png"
                 name="undefined"
                 width="undefined"
                 heigh="undefined"
                 is_scale={true}
               />
               <Image
-                image="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
+                image="/products/product1.png"
                 name="undefined"
                 width="undefined"
                 heigh="undefined"
@@ -118,7 +118,7 @@ const ProductDetail: Component<{}> = (props) => {
               />
             </div>
             <Image
-              image="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
+              image="/products/product1.png"
               name="undefined"
               width="undefined"
               heigh="undefined"

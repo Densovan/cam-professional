@@ -1,20 +1,23 @@
 import { Component } from "solid-js";
 
 export type Image = {
-  image: String;
-  name: String;
-  width: String;
-  heigh: String;
-  is_scale: Boolean;
+  image: string;
+  name: string;
+  width: string;
+  heigh: string;
+  is_scale: boolean;
 };
 
 const Image: Component<Image> = (props) => {
+  const { image, name, width, heigh, is_scale } = props;
   return (
-    <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+    <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block border mx-auto">
       <img
-        src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg"
-        alt="Two each of gray, white, and black shirts laying flat."
-        class="h-full w-full object-cover object-center hover:scale-125 duration-150"
+        src={image}
+        alt={name}
+        class={` mx-auto h-auto w-2/3 object-cover object-center ${
+          is_scale && " hover:scale-125 duration-150"
+        }`}
       />
     </div>
   );
