@@ -687,13 +687,11 @@ const Products: Component<{}> = () => {
 
             <div class="lg:col-span-3">
               <div class="grid md:grid-cols-3 gap-4 mt-4">
-                <Show when={allProducts()} fallback={<p>Loading...</p>}>
-                  <For each={allProducts()}>
-                    {(CoreProducts) => {
-                      return <Cards product={CoreProducts} />;
-                    }}
-                  </For>
-                </Show>
+                <For each={allProducts()}>
+                  {(CoreProducts) => {
+                    return <Cards product={CoreProducts} />;
+                  }}
+                </For>
               </div>
             </div>
           </div>
