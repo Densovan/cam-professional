@@ -1,13 +1,14 @@
 import { Component, For, Show, createResource } from "solid-js";
 import Cards from "../../components/cards/Cards";
+import CoreProducts from "../../data/Core-Product";
 
 const Products: Component<{}> = () => {
-  const fetchData = async () => {
-    const res = await fetch("https://cptdb.koompi.com/CoreProducts");
-    return res.json();
-  };
+  // const fetchData = async () => {
+  //   const res = await fetch("https://cptdb.koompi.com/CoreProducts");
+  //   return res.json();
+  // };
 
-  const [allProducts] = createResource(fetchData);
+  // const [allProducts] = createResource(fetchData);
 
   return (
     <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
@@ -687,9 +688,9 @@ const Products: Component<{}> = () => {
 
             <div class="lg:col-span-3">
               <div class="grid md:grid-cols-3 gap-4 mt-4">
-                <For each={allProducts()}>
-                  {(CoreProducts) => {
-                    return <Cards product={CoreProducts} />;
+                <For each={CoreProducts}>
+                  {(res) => {
+                    return <Cards product={res} />;
                   }}
                 </For>
               </div>
