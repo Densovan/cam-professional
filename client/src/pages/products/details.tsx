@@ -16,7 +16,7 @@ type Product = {
 };
 
 const fetchProduct = async (id: string) => {
-  const res = await fetch(`http://localhost:3000/CoreProducts/` + id);
+  const res = await fetch(`http://localhost:60011/CoreProducts/` + id);
   return res.json();
 };
 const ProductDetail: Component<{}> = (props) => {
