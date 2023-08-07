@@ -1,8 +1,8 @@
 import { Component, For } from "solid-js";
-import Cards from "../../components/cards/Cards";
-import CoreProducts from "../../data/Core-Product";
+// import Cards from "../../components/cards/Cards";
+// import CoreProducts from "../../data/Core-Product";
 
-const Products: Component<{}> = () => {
+const Products = () => {
   return (
     // <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
     //   <div>
