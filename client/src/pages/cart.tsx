@@ -26,7 +26,7 @@ const Cart = () => {
 
   return (
     <>
-      <Checkout />
+      {/* <Checkout /> */}
       <div>
         <div class="mx-auto mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
           <h2 class="text-4xl text-[#98A2AE] font-bold text-center">
@@ -378,8 +378,6 @@ export const Checkout: Component = (props) => {
     console.log(formData());
   };
 
-  console.log(formData);
-
   return (
     <>
       <div
@@ -430,8 +428,9 @@ export const Checkout: Component = (props) => {
             </button>
           </div>
 
+          {/* form */}
           <div class="backdrop-blur-sm bg-white bg-opacity-80 md:p-8 p-3">
-            {/* <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <div class="grid grid-cols-2 gap-4">
                 <div class="mb-6">
                   <label class="block text-md text-primary-focus">
@@ -521,7 +520,7 @@ export const Checkout: Component = (props) => {
                   </button>
                 )}
               </div>
-            </form> */}
+            </form>
 
             <form>
               <div class="mb-6">

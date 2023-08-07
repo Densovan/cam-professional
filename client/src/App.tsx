@@ -11,6 +11,8 @@ import ProductDetail from "./pages/products/details";
 import Products from "./pages/products";
 import News from "./pages/news";
 import SinglePageNews from "./pages/news/singlePage";
+import Favorite from "./pages/favorite";
+import Order from "./pages/order";
 
 const App: Component = () => {
   return (
@@ -25,6 +27,8 @@ const App: Component = () => {
         <Route path="/products/:id?" component={ProductDetail} />
         <Route path="/news" component={News} />
         <Route path="/news/:id?" component={SinglePageNews} />
+        <Route path="/favorite" component={Favorite} />
+        <Route path="/order" component={Order} />
       </Routes>
       <Footer />
     </section>

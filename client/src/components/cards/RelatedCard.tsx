@@ -15,7 +15,7 @@ interface Props {
 const RelatedCard: Component<Props> = ({ props }) => {
   return (
     <NavLink href={`/news/${props.id}`}>
-      <div class="lg:w-full mt-2 ">
+      <div class="lg:w-full mt-2 " data-aos="zoom-out-down">
         <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border p-2 rounded-xl">
           <img
             alt="team"

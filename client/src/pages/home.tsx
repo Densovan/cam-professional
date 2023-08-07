@@ -200,7 +200,7 @@ export const LatestProducts: Component<{}> = () => {
 
 export const MainProducts: Component<{}> = () => {
   const fetchData = async () => {
-    const res = await fetch("http://localhost:60011/CoreProducts");
+    const res = await fetch("https://cptdb.koompi.com/CoreProducts");
     return res.json();
   };
   const [coreProducts] = createResource(fetchData);

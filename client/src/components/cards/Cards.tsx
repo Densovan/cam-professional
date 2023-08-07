@@ -35,10 +35,21 @@ const Cards: Component<{ product: Product }> = (props) => {
           onClick={() => {
             navigate(`/products/${props?.product?.id}`);
           }}
+          data-aos="zoom-out-down"
         >
           <div class="group relative max-w-sm h-[25.5rem] bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 ">
             <div class="absolute flex flex-col top-0 right-0 p-3">
+              <div
+                id="tooltip-light"
+                role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
+              >
+                Available soon
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
               <button
+                data-tooltip-target="tooltip-light"
+                data-tooltip-style="light"
                 onClick={(e) => {
                   e.stopPropagation();
                 }}
