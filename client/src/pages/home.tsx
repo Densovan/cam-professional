@@ -9,18 +9,18 @@ const Home: Component = () => {
   return (
     <div>
       <Banner />
-      <div class="md:mx-44 mx-3">
-        <div class="mt-20">
+      <div class="md:mx-24 mx-3">
+        <div class="mt-0 md:mt-20 lg:mt-20">
           <LatestProducts />
         </div>
-        <div class="mt-32">
+        <div class="mt-0 md:mt-32 lg:mt-32">
           <MainProducts />
         </div>
 
         <div>
           <Features />
         </div>
-        <div class="mt-32">
+        <div class="mt-0 md:mt-32 lg:mt-32">
           <News />
         </div>
         <Contact />
@@ -33,7 +33,7 @@ export default Home;
 
 export const Banner: Component = () => {
   return (
-    <section class="w-full h-screen overflow-x-hidden">
+    <section class="w-full h-auto overflow-x-hidden">
       <div class="background-img">
         <div class="py-12 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <div>
@@ -71,7 +71,7 @@ export const Banner: Component = () => {
             </p>
           </div>
 
-          <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div class="flex flex-col mb-8 lg:mb-4 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <A
               href="/products"
               class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-2xl bg-primary hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
@@ -92,7 +92,7 @@ export const Banner: Component = () => {
             </A>
           </div>
 
-          <div class="mt-24 px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+          <div class="mt-9 md:mt-9 lg:mt-24 px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
             <span class="font-semibold text-gray-400 uppercase">
               Our Clients Believe In Us
             </span>
@@ -101,27 +101,43 @@ export const Banner: Component = () => {
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img alt="" src="/images/maybank.svg" class="w-48 " />
+                <img
+                  alt=""
+                  src="/images/maybank.svg"
+                  class="w-20 md:32 lg:w-48"
+                />
               </A>
               <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img alt="" src="/images/prince-bank.png" class="w-48" />
+                <img
+                  alt=""
+                  src="/images/prince-bank.png"
+                  class="w-20 md:32 lg:w-48"
+                />
               </A>
               <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img alt="" src="/images/hgb-group.png" class="w-36" />
+                <img
+                  alt=""
+                  src="/images/hgb-group.png"
+                  class="w-16 md:32 lg:w-32"
+                />
               </A>
             </div>
-            <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+            <div class="flex flex-wrap justify-center items-center mt-0 md:mt-3 lg:mt-3 text-gray-500 sm:justify-between">
               <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img alt="" src="/images/ph_logo.png" class="w-20" />
+                <img
+                  alt=""
+                  src="/images/ph_logo.png"
+                  class="w-9 md:32 lg:w-20"
+                />
               </A>
               <A
                 href="#"
@@ -130,14 +146,18 @@ export const Banner: Component = () => {
                 <img
                   alt=""
                   src="/images/orkide_development_logo.jpg"
-                  class="w-28"
+                  class="w-12 md:32 lg:w-20"
                 />
               </A>
               <A
                 href="#"
                 class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
               >
-                <img alt="" src="/images/CAMPU_BANK.jpg" class="w-72" />
+                <img
+                  alt=""
+                  src="/images/CAMPU_BANK.jpg"
+                  class="w-28 md:32 lg:w-44"
+                />
               </A>
             </div>
           </div>
@@ -150,7 +170,7 @@ export const Banner: Component = () => {
 export const LatestProducts: Component<{}> = () => {
   return (
     <section id="products">
-      <div class="mx-auto max-w-screen-xl">
+      <div class="mx-auto max-w-screen-xl ">
         <h1 class="text-center text-gray-300 font-extrabold md:text-5xl uppercase">
           Latest Products
         </h1>
@@ -222,14 +242,14 @@ export const MainProducts: Component<{}> = () => {
 export const Features: Component = () => {
   return (
     <section>
-      <div class="mt-32 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="mt-0 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
             <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-gray-100">
               Brand new
             </p>
           </div>
-          <h2 class="max-w-lg mb-6 font-sans text-5xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 class="max-w-lg mb-6 font-sans text-3xl lg:text-4xl 2xl:text-4xl font-bold leading-none tracking-tight text-gray-900  md:mx-auto">
             <span class="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -241,8 +261,8 @@ export const Features: Component = () => {
                     id="27df4f81-c854-45de-942a-fe90f7a300f9"
                     x="0"
                     y="0"
-                    width=".135"
-                    height=".30"
+                    width="0.135"
+                    height="0.30"
                   >
                     <circle cx="1" cy="1" r=".7"></circle>
                   </pattern>
@@ -371,7 +391,7 @@ export const Features: Component = () => {
 
 export const News: Component = () => {
   return (
-    <section>
+    <section class="overflow-x-hidden">
       <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
         <h1 class="text-center text-gray-300 font-extrabold md:text-5xl uppercase">
           CHECK LATEST NEWS

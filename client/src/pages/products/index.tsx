@@ -715,7 +715,7 @@ export const Banner: Component = () => {
             <img src="/products/product-2.png" alt="" class="w-1/2" />
           </div>
         </div>
-        <div class="rounded-2xl md:w-4/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 bg-gray-50 dark:bg-gray-800 py-6 px-6 md:py-0 md:px-4 lg:px-6 flex flex-col justify-center relative">
+        <div class="rounded-2xl md:w-4/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 bg-gray-50 dark:bg-gray-800 py-6 px-6 md:py-0 md:px-4 lg:px-6 flex flex-col justify-center ">
           <div class="flex flex-col justify-center">
             <h1 class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">
               RIBBON
@@ -724,12 +724,8 @@ export const Banner: Component = () => {
               Save Upto <span class="font-bold">30%</span>
             </p>
           </div>
-          <div class="flex justify-end md:absolute md:bottom-4 md:right-4 lg:bottom-0 lg:right-0">
-            <img
-              src="/products/product-2.png"
-              alt=""
-              class="md:w-12 md:h-12 lg:w-1/2 lg:h-1/2"
-            />
+          <div class="flex justify-end lg:bottom-0 lg:right-0">
+            <img src="/products/product-2.png" alt="" class="w-1/2" />
           </div>
         </div>
       </div>

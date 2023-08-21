@@ -26,6 +26,7 @@ const latesProducts = [
     rating: 5,
     brand: "EVOLIS",
     price: 300,
+    category: "sdf",
     quantity: 1,
   },
   {
@@ -35,6 +36,7 @@ const latesProducts = [
     rating: 5,
     brand: "FUJIFILM",
     price: 3300,
+    category: "sdf",
     quantity: 1,
   },
   {
@@ -44,6 +46,7 @@ const latesProducts = [
     rating: 5,
     brand: "RIBBON",
     price: 98,
+    category: "sdf",
     quantity: 1,
   },
   {
@@ -63,6 +66,7 @@ const latesProducts = [
     rating: 5,
     brand: "EVOLIS",
     price: 300,
+    category: "sdf",
     quantity: 1,
   },
   {
@@ -72,6 +76,7 @@ const latesProducts = [
     rating: 5,
     brand: "FUJIFILM",
     price: 3100,
+    category: "sdf",
     quantity: 1,
   },
 ];

@@ -13,13 +13,24 @@ import News from "./pages/news";
 import SinglePageNews from "./pages/news/singlePage";
 import Favorite from "./pages/favorite";
 import Order from "./pages/order";
+import Login from "./pages/login";
+import { useLocation } from "@solidjs/router";
+import NotFound from "./pages/404";
+import Register from "./pages/register";
+import Reset from "./pages/reset";
 
 const App: Component = () => {
+  const location = useLocation();
   return (
     <section>
-      <Navbar />
+      {location.pathname !== "/login" &&
+        location.pathname !== "/register" &&
+        location.pathname !== "/reset" && <Navbar />}
       <Routes>
         <Route path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route path="/reset" component={Reset} />
         <Route path="/about-us" component={About} />
         <Route path="/contact-us" component={Contact} />
         <Route path="/cart" component={Cart} />
@@ -31,8 +42,11 @@ const App: Component = () => {
         <Route path="/news/:id?" component={SinglePageNews} />
         <Route path="/favorite" component={Favorite} />
         <Route path="/order" component={Order} />
+        <Route path="/*" component={NotFound} />
       </Routes>
-      <Footer />
+      {location.pathname !== "/login" &&
+        location.pathname !== "/register" &&
+        location.pathname !== "/reset" && <Footer />}
     </section>
   );
 };

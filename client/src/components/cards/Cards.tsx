@@ -12,9 +12,7 @@ export type Product = {
   category: string;
   quantity: number;
 };
-interface Props {
-  props: Product;
-}
+
 const Cards: Component<{ product: Product }> = (props) => {
   const { cartItems, addToCart } = useCartContext();
   const navigate = useNavigate();
@@ -37,7 +35,7 @@ const Cards: Component<{ product: Product }> = (props) => {
           }}
           data-aos="zoom-out-down"
         >
-          <div class="group relative max-w-sm h-[25.5rem] bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 ">
+          <div class="group relative max-w-sm h-[25.5rem] md:h-auto bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 ">
             <div class="absolute flex flex-col top-0 right-0 p-3">
               <div
                 id="tooltip-light"
@@ -53,13 +51,13 @@ const Cards: Component<{ product: Product }> = (props) => {
                 onClick={(e) => {
                   e.stopPropagation();
                 }}
-                class="z-40 transition ease-in duration-300 bg-gray-50  hover:text-danger shadow hover:shadow-md text-red-300 rounded-full w-8 h-8 text-center p-1"
+                class="z-40 transition ease-in duration-300 bg-gray-50  hover:text-danger shadow hover:shadow-md text-red-300 rounded-full w-8 h-8 lg:h-6 lg:w-6 2xl:h-8 2xl:w-8 text-center p-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="w-6 h-6"
+                  class="w-6 h-6 lg:w-4 lg:h-4 2xl:w-6 2xl:h-6"
                 >
                   <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                 </svg>
@@ -67,7 +65,7 @@ const Cards: Component<{ product: Product }> = (props) => {
             </div>
             <div class="w-full">
               <img
-                class="p-3 rounded-t-lg w-60 max-w-sm mx-auto group-hover:scale-110 duration-150"
+                class="p-3 rounded-t-lg w-60 sm:w-48 mx-auto group-hover:scale-110 duration-150"
                 src={props?.product?.image}
                 alt="product image"
               />
@@ -133,7 +131,7 @@ const Cards: Component<{ product: Product }> = (props) => {
                   props?.product?.name?.length > 35 ? "mt-1" : "mt-7"
                 }`}
               >
-                <span class="text-3xl font-bold text-danger dark:text-white ">
+                <span class="text-3xl lg:text-xl 2xl:text-3xl font-bold text-danger dark:text-white ">
                   ${props.product?.price}
                 </span>
                 {!isInCart() ? (
@@ -142,7 +140,7 @@ const Cards: Component<{ product: Product }> = (props) => {
                       e.stopPropagation();
                       handleAddTocart(props.product);
                     }}
-                    class="text-primary hover:text-white border border-primary hover:border-danger hover:bg-danger focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class="text-primary hover:text-white border border-primary hover:border-danger hover:bg-danger focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 lg:py-1.5 2xl:py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Add to cart
                   </button>
@@ -152,7 +150,7 @@ const Cards: Component<{ product: Product }> = (props) => {
                       e.stopPropagation();
                       navigate(`/cart`);
                     }}
-                    class="text-white hover:text-white border bg-danger hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class="text-white hover:text-white border bg-danger hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 lg:py-1.5 2xl:py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     View Cart
                   </button>

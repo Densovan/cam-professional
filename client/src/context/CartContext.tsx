@@ -1,11 +1,4 @@
-import {
-  Accessor,
-  Setter,
-  createContext,
-  createEffect,
-  createSignal,
-  useContext,
-} from "solid-js";
+import { Show, createContext, createEffect, useContext } from "solid-js";
 import { createStore } from "solid-js/store";
 
 type Product = {

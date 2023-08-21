@@ -3,7 +3,7 @@ import { Component } from "solid-js";
 
 const Footer: Component = () => {
   return (
-    <footer class="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <footer class="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20 px-3 md:px-12 lg:px-24">
       <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -56,7 +56,7 @@ const Footer: Component = () => {
               </p>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+          <div class="w-1/2 px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Resources</h4>
               <ul>
@@ -95,7 +95,7 @@ const Footer: Component = () => {
               </ul>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+          <div class="w-1/2 px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Company</h4>
               <ul>
@@ -134,7 +134,7 @@ const Footer: Component = () => {
               </ul>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+          <div class="w-1/2 px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Quick Links</h4>
               <ul>
@@ -173,7 +173,7 @@ const Footer: Component = () => {
               </ul>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+          <div class="w-1/2 px-4 sm:w-1/2 lg:w-3/12">
             <div class="mb-10 w-full">
               <h4 class="text-dark mb-9 text-lg font-semibold">Follow Us On</h4>
               <div class="mb-6 flex items-center">
