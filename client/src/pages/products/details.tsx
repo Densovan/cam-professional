@@ -39,7 +39,7 @@ const ProductDetail: Component<{}> = (props) => {
 
   return (
     <>
-      <div class="bg-white">
+      <div class="px-0 md:px-16">
         <div class="pt-6">
           <nav aria-label="Breadcrumb">
             <ol
@@ -93,7 +93,37 @@ const ProductDetail: Component<{}> = (props) => {
             </ol>
           </nav>
 
-          <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-4 lg:px-8">
+          <div class="block md:hidden relative -z-10 px-4 pt-4">
+            <div id="default-carousel" class="w-full" data-carousel="slide">
+              <div class="relative h-[180px] overflow-hidden rounded-lg">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="/thumbnails/thumbnail-1.png"
+                    alt=""
+                    class="w-full object-contain"
+                  />
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="/thumbnails/thumbnail-2.png"
+                    alt=""
+                    class="w-full object-contain"
+                  />
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="/thumbnails/thumbnail-3.png"
+                    alt=""
+                    class="w-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden md:block mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-4 lg:px-8">
             <Image
               image="/products/product1.png"
               name="undefined"
@@ -602,9 +632,9 @@ const ProductDetail: Component<{}> = (props) => {
           </div>
         </div>
       </div>
-      <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+      <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-4 md:px-4 lg:px-24 xl:px-24 2xl:px-4">
         <h1 class="text-gray-900 font-bold text-2xl">Related products</h1>
-        <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mt-12 ">
+        <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mt-12">
           <For each={CoreProducts.slice(0, 4)}>
             {(CoreProducts) => {
               return (

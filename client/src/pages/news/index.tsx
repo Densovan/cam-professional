@@ -4,9 +4,9 @@ import NewsData from "../../data/News";
 
 const News: Component = () => {
   return (
-    <section class="w-full h-screen overflow-x-hidden">
+    <section class="w-full h-screen overflow-x-hidden ">
       <div class="background-img-about">
-        <div class="bg-white/60 w-full h-full bg-opacity-5">
+        <div class="bg-white/60 w-full h-full bg-opacity-5 px-4 md:px-24 lg:px-24 xl:px-24 2xl:px-0">
           <div class="mx-auto max-w-screen-xl py-9 ">
             <div class="flex px-5 md:flex-row flex-col items-center bg-white rounded-3xl">
               <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left">

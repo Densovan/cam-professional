@@ -7,23 +7,27 @@ const Register = () => {
       style="background-image:url('./../../public/images/jcomp.jpg')"
     >
       <div class="w-full h-screen absolute bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5" />
-      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen w-[27vw] lg:py-0">
+      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen w-full md:w-[40vw] lg:w-[36vw] xl:w-[36vw] 2xl:w-[27vw] ">
         <A
           href="/"
           class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img class="w-32 z-50" src="/images/logo.png" alt="logo" />
+          <img
+            class="w-32 md:w-16 lg:w-16 xl:w-16 2xl:w-32 z-50"
+            src="/images/logo.png"
+            alt="logo"
+          />
         </A>
         <div class="w-full bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30 rounded-2xl shadow-md dark:border md:mt-0 sm:max-w-xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+          <div class="p-4 md:p-2 lg:p-4 xl:p-4 2xl:p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 class="text-xl md:text-sm lg:text-sm xl:text-sm 2xl:text-xl text-center font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
               Register account!
             </h1>
 
             <div class="flex lg:flex-row sm:flex-col justify-between ">
               <button
                 type="button"
-                class="w-full bg-white text-base-900 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 justify-center text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2"
+                class="w-full bg-white text-base-900 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm justify-center text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2 md:mb-2 lg:mb-0 xl:mb-0 2xl:mb-2"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -42,7 +46,7 @@ const Register = () => {
               </button>
               <button
                 type="button"
-                class="w-full text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2"
+                class="w-full text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2 md:mb-2 lg:mb-0 xl:mb-0 2xl:mb-2"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -66,7 +70,7 @@ const Register = () => {
               <span class="text-base-300 font-normal">or continue with</span>
               <span class="h-px w-16 bg-gray-500"></span>
             </div>
-            <form class="space-y-4 md:space-y-6" action="#">
+            <form class="space-y-4 md:space-y-3" action="#">
               <div>
                 <label
                   for="email"

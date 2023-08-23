@@ -19,7 +19,7 @@ const RelatedCard: Component<Props> = ({ props }) => {
         <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border p-2 rounded-xl">
           <img
             alt="team"
-            class="flex-shrink-0 rounded-lg w-24 h-24 object-cover object-center sm:mb-0 mb-4"
+            class="flex-shrink-0 rounded-lg w-full md:w-24 object-cover object-center sm:mb-0 mb-4"
             src={props?.image}
           />
           <div class="flex-grow sm:pl-8">

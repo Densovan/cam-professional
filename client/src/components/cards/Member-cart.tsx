@@ -17,15 +17,15 @@ const MemberCard: Component<Props> = ({ props }) => {
       data-aos="zoom-out-down"
     >
       <img
-        class="mx-auto mb-4 w-52 h-52 rounded-full"
+        class="mx-auto mb-4 w-full h-full md:w-48 md:h-48 rounded-full"
         src={props.image}
         alt="Bonnie Avatar"
       />
-      <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h3 class="mb-1 text-md md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         <A href="#">{props.name}</A>
       </h3>
 
-      <p>{props.position}</p>
+      <p class="text-xs md:text-lg">{props.position}</p>
     </div>
   );
 };

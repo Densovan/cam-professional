@@ -7,10 +7,10 @@ const SinglePageNews: Component = () => {
   return (
     <>
       <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-        <div class="grid grid-cols-3  gap-3 justify-between px-4 mx-auto max-w-screen-xl ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 justify-between px-4 mx-auto max-w-screen-xl ">
           <article class="col-span-2 mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header class="mb-4 lg:mb-6 not-format">
-              <h1 class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+              <h1 class="mb-4 text-xl md:text-2xl font-extrabold leading-tight text-gray-900 lg:mb-6 dark:text-white">
                 King Norodom Sihamoni’s Birthday
               </h1>
             </header>
@@ -506,6 +506,7 @@ const SinglePageNews: Component = () => {
             </section>
           </article>
           <div class="col-span-auto w-full p-3 rounded-xl ">
+            <h3>Related contents</h3>
             <For each={NewsData}>
               {(NewData) => {
                 return <RelatedCard props={NewData} />;

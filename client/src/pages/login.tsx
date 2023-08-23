@@ -7,16 +7,20 @@ const Login = () => {
       style="background-image:url('./../../public/images/jcomp.jpg')"
     >
       <div class="w-full h-screen absolute bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5" />
-      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen w-[27vw] lg:py-0">
+      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen w-full md:w-[40vw] lg:w-[30vw] xl:w-[36vw] 2xl:w-[27vw] lg:py-0">
         <A
           href="/"
           class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img class="w-32 z-50" src="/images/logo.png" alt="logo" />
+          <img
+            class="w-32 md:w-16 lg:w-16 xl:w-16 2xl:w-32 z-50"
+            src="/images/logo.png"
+            alt="logo"
+          />
         </A>
         <div class="w-full bg-white/60 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30 rounded-2xl shadow-md dark:border md:mt-0 sm:max-w-xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h1 class="text-xl md:text-sm lg:text-sm xl:text-sm 2xl:text-xl text-center font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
               Welcome back!
             </h1>
 

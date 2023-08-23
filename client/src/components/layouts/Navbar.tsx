@@ -16,7 +16,7 @@ const Navbar: Component<{}> = () => {
   return (
     <div>
       <nav class="bg-white-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100 ">
-        <div class="max-w-screen-xl flex lg:flex-wrap  items-center justify-between mx-auto p-4 md:px-24">
+        <div class="max-w-screen-xl flex lg:flex-wrap  items-center justify-between mx-auto p-4 md:px-2 lg:px-24 xl:px-24 2xl:px-2">
           <A href="/" class="flex items-center">
             <img class="md:w-24 w-24" src="/images/logo.png" alt="Solid logo" />
           </A>
