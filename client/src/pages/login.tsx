@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div
       class=" flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat"
-      style="background-image:url('./../../public/images/jcomp.jpg')"
+      style="background-image:url('/images/jcomp.jpg')"
     >
       <div class="w-full h-screen absolute bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5" />
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen w-full md:w-[40vw] lg:w-[30vw] xl:w-[36vw] 2xl:w-[27vw] lg:py-0">
