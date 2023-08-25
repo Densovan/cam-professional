@@ -1,10 +1,14 @@
-import { Component, For } from "solid-js";
+import { Component, For, createResource } from "solid-js";
 import Cards from "../../components/cards/Cards";
-import CoreProducts from "../../data/Core-Product";
 import { A } from "@solidjs/router";
-import { Carousel } from "flowbite";
 
 const Products: Component<{}> = () => {
+  const fetchData = async () => {
+    const res = await fetch("https://cptdb.koompi.com/CoreProducts");
+    return res.json();
+  };
+  const [coreProducts] = createResource(fetchData);
+
   return (
     <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-2 lg:px-24 xl:px-24 2xl:px-2">
       <div>
@@ -476,7 +480,7 @@ const Products: Component<{}> = () => {
 
             <div class="lg:col-span-3">
               <div class="grid md:grid-cols-3 gap-4 mt-4">
-                <For each={CoreProducts}>
+                <For each={coreProducts()}>
                   {(res) => {
                     return <Cards product={res} />;
                   }}
