@@ -17,4 +17,4 @@ jobs:
             ssh \
               -o 'StrictHostKeyChecking no' \
               -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
-              'cd /kmp/camprotec/cam-professional && git checkout main && git pull && cd client && npm i --force && npm run build && pm2 restart 22'
+              'cd /kmp/camprotec/cam-professional && git checkout main && git pull && cd client && npm i --force && npm run build && pm2 restart 24'
