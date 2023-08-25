@@ -1,28 +1,15 @@
-import {
-  Component,
-  For,
-  createResource,
-  createSignal,
-  createEffect,
-} from "solid-js";
+import { Component, For, createSignal, createEffect } from "solid-js";
 import { A } from "@solidjs/router";
 import Cards from "../../components/cards/Cards";
 import axios from "axios";
 
 const Products: Component = () => {
-  // const fetchData = async () => {
-  //   const res = await fetch("https://cptdb.koompi.com/CoreProducts");
-  //   return res.json();
-  // };
-  // const [coreProducts] = createResource(fetchData);
-
   const [data, setData] = createSignal([]);
 
   createEffect(() => {
     axios
       .get("https://cptdb.koompi.com/CoreProducts")
       .then((res) => {
-        console.log("res", res.data);
         setData(res?.data);
       })
       .catch((err) => console.log(err));
