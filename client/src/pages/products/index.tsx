@@ -1,13 +1,32 @@
-import { Component, For, createResource } from "solid-js";
+import {
+  Component,
+  For,
+  createResource,
+  createSignal,
+  createEffect,
+} from "solid-js";
 import { A } from "@solidjs/router";
 import Cards from "../../components/cards/Cards";
+import axios from "axios";
 
 const Products: Component = () => {
-  const fetchData = async () => {
-    const res = await fetch("https://cptdb.koompi.com/CoreProducts");
-    return res.json();
-  };
-  const [coreProducts] = createResource(fetchData);
+  // const fetchData = async () => {
+  //   const res = await fetch("https://cptdb.koompi.com/CoreProducts");
+  //   return res.json();
+  // };
+  // const [coreProducts] = createResource(fetchData);
+
+  const [data, setData] = createSignal([]);
+
+  createEffect(() => {
+    axios
+      .get("https://cptdb.koompi.com/CoreProducts")
+      .then((res) => {
+        console.log("res", res.data);
+        setData(res?.data);
+      })
+      .catch((err) => console.log(err));
+  });
 
   return (
     <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-2 lg:px-24 xl:px-24 2xl:px-2">
@@ -480,7 +499,7 @@ const Products: Component = () => {
 
             <div class="lg:col-span-3">
               <div class="grid md:grid-cols-3 gap-4 mt-4">
-                <For each={coreProducts()}>
+                <For each={data()}>
                   {(res) => {
                     return <Cards product={res} />;
                   }}
