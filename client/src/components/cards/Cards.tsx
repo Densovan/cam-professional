@@ -1,6 +1,6 @@
 import { Component, Show } from "solid-js";
 import { useCartContext } from "../../context/CartContext";
-import { A, useNavigate } from "@solidjs/router";
+import { useNavigate } from "@solidjs/router";
 
 export type Product = {
   id: string;

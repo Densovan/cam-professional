@@ -1,8 +1,8 @@
 import { Component, For, createResource } from "solid-js";
-import Cards from "../../components/cards/Cards";
 import { A } from "@solidjs/router";
+import Cards from "../../components/cards/Cards";
 
-const Products: Component<{}> = () => {
+const Products: Component = () => {
   const fetchData = async () => {
     const res = await fetch("https://cptdb.koompi.com/CoreProducts");
     return res.json();
