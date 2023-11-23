@@ -1,9 +1,11 @@
-import { Component, For, Show, createResource } from "solid-js";
+import { Component, For, Show, createEffect, createResource } from "solid-js";
 import latestProduct from "../../data/Lates-product";
 import Cards from "../components/cards/Cards";
 import NewsData from "../data/News";
 import NewsCard from "../components/cards/NewsCard";
 import { A } from "@solidjs/router";
+import { publicQuery } from "../libs/client";
+import { GET_ALL_PRODUCTS } from "../graphql/product";
 
 const Home: Component = () => {
   return (
@@ -42,7 +44,7 @@ export const Banner: Component = () => {
               class="inline-flex justify-between items-center py-1 px-4 mb-3 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
               role="alert"
             >
-              <span class="text-sm font-medium ">
+              <span class="text-sm font-medium text-primary">
                 CAM PROFESSIONAL TECHNOLOGY
               </span>
               <svg
@@ -168,6 +170,10 @@ export const Banner: Component = () => {
 };
 
 export const LatestProducts: Component<{}> = () => {
+  const [products, { refetch }] = publicQuery(GET_ALL_PRODUCTS);
+  createEffect(() => {
+    console.log("products", products());
+  });
   return (
     <section id="products">
       <div class="mx-auto max-w-screen-xl ">
@@ -181,18 +187,20 @@ export const LatestProducts: Component<{}> = () => {
           <A href="/products" class="text-gray-500 text-xs font-bold">
             Show More
           </A>
-          <img class="w-auto h-3.5" src="/images/right-arrow.png" />
+          <img class="w-auto h-3.5" src="/images/right-arrow.png" alt="" />
         </div>
         <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mt-12">
-          <For each={latestProduct}>
-            {(latestProduct) => {
-              return (
-                <div>
-                  <Cards product={latestProduct} />
-                </div>
-              );
-            }}
-          </For>
+          <Show when={products()} fallback={<div>loading...</div>}>
+            <For each={products().themeProducts}>
+              {(latestProduct) => {
+                return (
+                  <div>
+                    <Cards product={latestProduct} />
+                  </div>
+                );
+              }}
+            </For>
+          </Show>
         </div>
       </div>
     </section>
@@ -218,7 +226,7 @@ export const MainProducts: Component<{}> = () => {
         <A href="/products">
           <div class="float-right py-3 flex space-x-1 items-center">
             <h1 class="text-gray-500 text-xs font-bold">Show More</h1>
-            <img class="w-auto h-3.5" src="/images/right-arrow.png" />
+            <img class="w-auto h-3.5" src="/images/right-arrow.png" alt="" />
           </div>
         </A>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">

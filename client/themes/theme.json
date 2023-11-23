@@ -1,0 +1,18 @@
+{
+  "color": {
+    "primary": "#3674B7",
+    "danger": "#de1414",
+    "secondary": "#E11D48",
+    "accent": "#1dcdbc",
+    "neutral": "#2b3440",
+    "base-100": "#27F24C",
+    "base-200": "#fff",
+    "info": "#3abff8",
+    "success": "#36d399",
+    "warning": "#fbbd23",
+    "error": "#f87272"
+  },
+  "background": {
+    "hero-pattern": "url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1699315200&semt=sph')"
+  }
+}

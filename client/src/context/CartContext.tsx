@@ -13,14 +13,14 @@ type Product = {
 };
 
 type CartItem = {
-  product: Product;
+  product: ProductType;
   quantity: number;
 };
 
 type CartContextValue = {
   cartItems: CartItem[];
-  addToCart: (product: Product) => void;
-  minusCart: (product: Product) => void;
+  addToCart: (product: ProductType) => void;
+  minusCart: (product: ProductType) => void;
   removeFromCart: (productId: string) => void;
 };
 
@@ -46,7 +46,7 @@ export function CartContextProvider(props: { children: any }) {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   };
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: ProductType) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find(
         (item) => item.product?.id === product?.id
@@ -65,7 +65,7 @@ export function CartContextProvider(props: { children: any }) {
     updateLocalStorage();
   };
 
-  const minusCart = (product: Product) => {
+  const minusCart = (product: ProductType) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find(
         (item) => item.product?.id === product?.id
@@ -78,7 +78,7 @@ export function CartContextProvider(props: { children: any }) {
         );
       }
       const updatedItems = prevItems.filter(
-        (item: any) => item.product.id !== product.id
+        (item: CartItem) => item.product.id !== product.id
       );
       return updatedItems;
       // const newItem: CartItem = { product, quantity: 1 };

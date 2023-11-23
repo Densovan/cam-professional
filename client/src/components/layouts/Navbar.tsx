@@ -1,7 +1,8 @@
-import { Component } from "solid-js";
+import { Component, createResource } from "solid-js";
 import { A } from "@solidjs/router";
 import { useCartContext } from "../../context/CartContext";
 import NavActive from "./NavActive";
+import { read } from "../../utils/theme";
 
 export type Nav = {
   title: string;
@@ -12,13 +13,15 @@ export type Nav = {
 
 const Navbar: Component<{}> = () => {
   const { cartItems } = useCartContext();
-
+  const logo = read("logo");
+  const name = read("name");
+  
   return (
     <div>
       <nav class="bg-white-900 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100 ">
         <div class="max-w-screen-xl flex lg:flex-wrap  items-center justify-between mx-auto p-4 md:px-2 lg:px-24 xl:px-24 2xl:px-2">
           <A href="/" class="flex items-center">
-            <img class="md:w-24 w-24" src="/images/logo.png" alt="Solid logo" />
+            <img class="md:w-24 w-24" src={logo()} alt={name()} />
           </A>
           <div class="flex items-center md:order-2">
             <div class="hidden md:hidden lg:block">

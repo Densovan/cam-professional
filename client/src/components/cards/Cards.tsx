@@ -2,21 +2,10 @@ import { Component, Show } from "solid-js";
 import { useCartContext } from "../../context/CartContext";
 import { useNavigate } from "@solidjs/router";
 
-export type Product = {
-  id: string;
-  name: string;
-  image: string;
-  rating: number;
-  brand: string;
-  price: number;
-  category: string;
-  quantity: number;
-};
-
-const Cards: Component<{ product: Product }> = (props) => {
+const Cards: Component<{ product: ProductType }> = (props) => {
   const { cartItems, addToCart } = useCartContext();
   const navigate = useNavigate();
-  const handleAddTocart = (product: Product) => {
+  const handleAddTocart = (product: ProductType) => {
     addToCart(product);
   };
   const isInCart = () => {
@@ -66,7 +55,9 @@ const Cards: Component<{ product: Product }> = (props) => {
             <div class="w-full">
               <img
                 class="p-3 rounded-t-lg w-60 sm:w-48 mx-auto group-hover:scale-110 duration-150"
-                src={props?.product?.image}
+                src={`${import.meta.env.VITE_VARIABLE_IPFS}/api/ipsf?hash=${
+                  props?.product?.thumbnail
+                }`}
                 alt="product image"
               />
             </div>
@@ -123,12 +114,12 @@ const Cards: Component<{ product: Product }> = (props) => {
                 </span>
               </div>
               <h5 class="text-md font-medium tracking-tight text-gray-900 dark:text-white ">
-                {props?.product?.name}
+                {props?.product?.title}
               </h5>
 
               <div
                 class={`flex items-center justify-between ${
-                  props?.product?.name?.length > 35 ? "mt-1" : "mt-7"
+                  props?.product?.title?.length > 35 ? "mt-1" : "mt-7"
                 }`}
               >
                 <span class="text-3xl lg:text-xl 2xl:text-3xl font-bold text-danger dark:text-white ">

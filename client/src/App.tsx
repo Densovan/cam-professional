@@ -22,7 +22,7 @@ import Reset from "./pages/reset";
 const App: Component = () => {
   const location = useLocation();
   return (
-    <section>
+    <section class="bg-base-200">
       {location.pathname !== "/login" &&
         location.pathname !== "/register" &&
         location.pathname !== "/reset" && <Navbar />}
